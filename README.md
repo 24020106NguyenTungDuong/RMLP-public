@@ -18,19 +18,17 @@ d(u, v) + ceil((γ(u) + γ(v)) / 2) >= 1 + diam(G)
 The **radio mean number** `rmn(G)` is the minimum possible span (i.e. `max(γ)`) over all valid
 radio mean labelings of `G`.
 
-Existing literature on this problem (see e.g. Badr et al., 2020, IEEE Access; Saraswathi & Meera,
-2022, IEEE Access; Saraswathi, Meera & Lin, 2025, MDPI *Mathematics*) has proposed ILP models for
-computing `rmn(G)` but, as of the most recent published work in this sub-field, exact computation
-of `rmn(G)` for `n >= 10` is stated to be an open problem, with practical approaches limited to
-brute-force enumeration.
-
 This repository provides:
-- SAT-based solvers implementing this paper's proposed encoding, which prove `rmn(G)` exactly for
-  paths and cycles up to `n = 50`.
-- A literal SAT transcription and ILP (Gurobi, CPLEX) implementations of the pairwise-boolean
-  Radio-mean model used as an independent cross-check.
+- SAT-based solvers implementing this paper's proposed encoding for computing `rmn(G)`.
+- ILP models (Gurobi, CPLEX) implementing the literal pairwise-boolean Radio-mean formulation,
+  used as an independent cross-check.
+- A literal SAT transcription of the same pairwise-boolean ILP model, used as a further
+  independent cross-check.
 - Standalone validators that re-derive and check every returned labeling against the RML
   condition directly, independent of the solver that produced it.
+
+Detailed results, coverage, and comparisons against prior work are presented in the paper; this
+repository is the accompanying code and data.
 
 ## Repository Structure
 
@@ -138,8 +136,8 @@ python3 validate/validate_cycle.py --min 5 --max 50 --timeout 120
 python3 validate/validate_path.py --min 3 --max 50 --timeout 300
 ```
 
-Note: for the path CPLEX solver, `n = 50` is excluded by default (`CPLEX_CAP` in
-`validate_path.py`) — at that size the literal encoding's constraint count can exhaust memory on a
+Note: for the path CPLEX solver, only instances up to `n = 42` are run by default (`CPLEX_CAP` in
+`validate_path.py`) — beyond that, the literal encoding's constraint count can exhaust memory on a
 typical machine. Gurobi covers `n = 50` for path without issue. Adjust the cap if your machine has
 more memory headroom.
 
