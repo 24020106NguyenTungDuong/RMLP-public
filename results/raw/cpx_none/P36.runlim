@@ -1,0 +1,42 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		java
+[runlim] argv[1]:		-cp
+[runlim] argv[2]:		.:/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/lib/cplex.jar
+[runlim] argv[3]:		-Djava.library.path=/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/bin/x86-64_linux
+[runlim] argv[4]:		-Drml.threads=0
+[runlim] argv[5]:		-Drml.seed=0
+[runlim] argv[6]:		-Drml.workmem=2048
+[runlim] argv[7]:		-Drml.nodefile=1
+[runlim] argv[8]:		SolveGeneralCplexLiteral
+[runlim] argv[9]:		900
+[runlim] start:			Thu Oct 29 03:19:32 2026
+[runlim] child:			189978
+[runlim] sample:		18.31 time, 10.01 real, 840 MB, 1.86 load
+[runlim] sample:		42.59 time, 20.01 real, 2323 MB, 1.88 load
+[runlim] sample:		62.61 time, 30.01 real, 2153 MB, 1.90 load
+[runlim] sample:		82.64 time, 40.01 real, 2165 MB, 1.92 load
+[runlim] sample:		102.65 time, 50.01 real, 2170 MB, 1.93 load
+[runlim] sample:		122.67 time, 60.01 real, 2204 MB, 1.94 load
+[runlim] sample:		142.69 time, 70.01 real, 2204 MB, 1.95 load
+[runlim] sample:		162.71 time, 80.01 real, 2223 MB, 1.96 load
+[runlim] sample:		182.73 time, 90.01 real, 2223 MB, 1.96 load
+[runlim] sample:		202.74 time, 100.01 real, 2223 MB, 1.97 load
+[runlim] sample:		223.13 time, 110.01 real, 2234 MB, 1.98 load
+[runlim] sample:		243.16 time, 120.01 real, 2242 MB, 1.98 load
+[runlim] sample:		263.16 time, 130.01 real, 2243 MB, 1.98 load
+[runlim] sample:		283.18 time, 140.01 real, 2261 MB, 1.99 load
+[runlim] sample:		303.19 time, 150.01 real, 2262 MB, 1.99 load
+[runlim] end:			Thu Oct 29 03:22:04 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			151.83 seconds
+[runlim] time:			306.65 seconds
+[runlim] space:			2335 MB
+[runlim] load:			1.99 maximum
+[runlim] samples:		1519

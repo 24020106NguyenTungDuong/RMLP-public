@@ -1,0 +1,11 @@
+rmn(G) <= 6
+Execution time: 0.099822 s
+h(0) = 3
+h(1) = 6
+h(2) = 2
+h(3) = 4
+h(4) = 5
+h(5) = 1
+
+rmn(G) = 6
+Execution time: 0.109942 s

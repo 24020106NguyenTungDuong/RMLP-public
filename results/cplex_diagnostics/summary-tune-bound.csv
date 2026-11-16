@@ -1,0 +1,3 @@
+instance,mode,threads,seed,rows,cols,presolved_rows,root_lp,root_last,root_time,nodes,best_bound,obj,status,runtime_s,t_opt_incumbent_s,t_best_log_s,incumbents,cuts,peak_mb,runlim_status,finished_at
+P45,tune-bound,0,,1816499,3961,853224,45.0569,48.1969,6.63,0,48.1969,81,AbortTimeLim,872.34,-1.00,747.72,88@288s 81@748s,GUB cover=1; Clique=54; Implied bound=3; Mixed integer rounding=48; Zero-half=3; Lift and project=8; Gomory fractional=5,6222,ok,2026-10-29 17:29:52
+P50,tune-bound,0,,2802999,4901,1403337,49.7164,49.7164,10.38,0,49.7164,98,AbortTimeLim,867.76,-1.00,369.22,98@369s,Clique=121; Mixed integer rounding=33; Zero-half=6; Lift and project=7; Gomory fractional=12,8357,ok,2026-10-29 17:44:54

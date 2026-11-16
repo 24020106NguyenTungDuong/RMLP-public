@@ -1,0 +1,101 @@
+rmn(G) <= 20
+Execution time: 0.003526 s
+h(0) = 10
+h(1) = 11
+h(2) = 12
+h(3) = 13
+h(4) = 14
+h(5) = 15
+h(6) = 16
+h(7) = 17
+h(8) = 18
+h(9) = 19
+h(10) = 20
+Valid label
+Number of clauses: 2592
+Number of variables: 451
+
+rmn(G) <= 19
+Execution time: 0.007250 s
+h(0) = 9
+h(1) = 10
+h(2) = 11
+h(3) = 12
+h(4) = 13
+h(5) = 14
+h(6) = 15
+h(7) = 16
+h(8) = 17
+h(9) = 18
+h(10) = 19
+Valid label
+Number of clauses: 2592
+Number of variables: 451
+
+rmn(G) <= 18
+Execution time: 0.010047 s
+h(0) = 8
+h(1) = 11
+h(2) = 10
+h(3) = 9
+h(4) = 12
+h(5) = 13
+h(6) = 14
+h(7) = 15
+h(8) = 16
+h(9) = 17
+h(10) = 18
+Valid label
+Number of clauses: 2592
+Number of variables: 451
+
+rmn(G) <= 17
+Execution time: 0.013575 s
+h(0) = 8
+h(1) = 11
+h(2) = 10
+h(3) = 9
+h(4) = 13
+h(5) = 12
+h(6) = 7
+h(7) = 14
+h(8) = 15
+h(9) = 16
+h(10) = 17
+Valid label
+Number of clauses: 2592
+Number of variables: 451
+
+rmn(G) <= 16
+Execution time: 0.019008 s
+h(0) = 7
+h(1) = 12
+h(2) = 10
+h(3) = 16
+h(4) = 15
+h(5) = 6
+h(6) = 13
+h(7) = 14
+h(8) = 9
+h(9) = 11
+h(10) = 8
+Valid label
+Number of clauses: 2592
+Number of variables: 451
+
+rmn(G) = 16
+Execution time: 0.073346 s
+h(0) = 7
+h(1) = 12
+h(2) = 10
+h(3) = 16
+h(4) = 15
+h(5) = 6
+h(6) = 13
+h(7) = 14
+h(8) = 9
+h(9) = 11
+h(10) = 8
+Valid label
+Number of clauses: 2592
+Number of variables: 451

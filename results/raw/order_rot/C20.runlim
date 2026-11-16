@@ -1,0 +1,54 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_x_and_g_cycle.py
+[runlim] argv[3]:		--sb
+[runlim] argv[4]:		rotation
+[runlim] start:			Thu Nov  5 17:26:40 2026
+[runlim] child:			63310
+[runlim] sample:		10.36 time, 10.01 real, 35 MB, 1.58 load
+[runlim] sample:		20.72 time, 20.01 real, 33 MB, 1.57 load
+[runlim] sample:		31.06 time, 31.12 real, 40 MB, 1.49 load
+[runlim] sample:		41.37 time, 41.12 real, 42 MB, 1.41 load
+[runlim] sample:		51.75 time, 51.12 real, 52 MB, 1.35 load
+[runlim] sample:		62.08 time, 62.24 real, 55 MB, 1.29 load
+[runlim] sample:		72.39 time, 72.24 real, 44 MB, 1.25 load
+[runlim] sample:		82.82 time, 82.24 real, 60 MB, 1.21 load
+[runlim] sample:		93.12 time, 92.24 real, 61 MB, 1.18 load
+[runlim] sample:		103.45 time, 103.38 real, 64 MB, 1.15 load
+[runlim] sample:		113.90 time, 113.38 real, 47 MB, 1.13 load
+[runlim] sample:		124.19 time, 123.38 real, 67 MB, 1.11 load
+[runlim] sample:		134.52 time, 134.55 real, 67 MB, 1.09 load
+[runlim] sample:		144.92 time, 144.55 real, 67 MB, 1.08 load
+[runlim] sample:		155.25 time, 154.55 real, 78 MB, 1.06 load
+[runlim] sample:		165.60 time, 165.70 real, 78 MB, 1.05 load
+[runlim] sample:		175.95 time, 175.70 real, 66 MB, 1.04 load
+[runlim] sample:		186.33 time, 185.70 real, 67 MB, 1.04 load
+[runlim] sample:		196.68 time, 196.86 real, 70 MB, 1.03 load
+[runlim] sample:		206.99 time, 206.86 real, 72 MB, 1.19 load
+[runlim] sample:		217.42 time, 216.86 real, 74 MB, 1.16 load
+[runlim] sample:		227.74 time, 226.86 real, 75 MB, 1.13 load
+[runlim] sample:		238.06 time, 238.02 real, 75 MB, 1.11 load
+[runlim] sample:		248.50 time, 248.02 real, 75 MB, 1.09 load
+[runlim] sample:		258.81 time, 258.02 real, 76 MB, 1.08 load
+[runlim] sample:		269.14 time, 269.19 real, 76 MB, 1.14 load
+[runlim] sample:		279.56 time, 279.19 real, 74 MB, 1.12 load
+[runlim] sample:		289.86 time, 289.19 real, 71 MB, 1.10 load
+[runlim] sample:		300.21 time, 300.35 real, 85 MB, 1.08 load
+[runlim] sample:		310.64 time, 310.35 real, 85 MB, 1.07 load
+[runlim] sample:		320.95 time, 320.35 real, 85 MB, 1.06 load
+[runlim] sample:		331.33 time, 330.35 real, 85 MB, 1.05 load
+[runlim] end:			Thu Nov  5 17:32:15 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			335.61 seconds
+[runlim] time:			336.64 seconds
+[runlim] space:			88 MB
+[runlim] load:			1.69 maximum
+[runlim] samples:		3253

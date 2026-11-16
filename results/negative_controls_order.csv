@@ -1,0 +1,11 @@
+instance,case,modification,expected,verdict,as_expected,check_s,checker_last_line,checked_at
+P18,original,"proof from batch 27 (order SAT), unchanged",VERIFIED,VERIFIED,True,11.849,c verification time = 11.85 secs,2026-11-06 02:00:38
+P18,truncated,kept 3023077 of 6046155 lines,rejected,rejected,True,5.961,c verification time = 5.96 secs,2026-11-06 02:00:44
+P18,corrupted,clause 10956: literal -1207 -> 1207,rejected,rejected,True,0.017,c verification time = 0.01 secs,2026-11-06 02:00:44
+P18,used_clause,clause 613 (-1225 0) replaced by the tautology 1 -1,rejected,rejected,True,0.017,c verification time = 0.01 secs,2026-11-06 02:00:44
+P18,unused_clause,removed clause 10955: 810 0,VERIFIED,VERIFIED,True,11.924,c verification time = 11.92 secs,2026-11-06 02:00:56
+C20,original,"proof from batch 27 (order SAT), unchanged",VERIFIED,VERIFIED,True,23.243,c verification time = 23.24 secs,2026-11-06 02:01:50
+C20,truncated,kept 4650733 of 9301467 lines,rejected,rejected,True,11.404,c verification time = 11.40 secs,2026-11-06 02:02:01
+C20,corrupted,clause 12881: literal -1141 -> 1141,rejected,rejected,True,0.027,c verification time = 0.02 secs,2026-11-06 02:02:01
+C20,used_clause,clause 581 (-1161 0) replaced by the tautology 1 -1,rejected,rejected,True,0.021,c verification time = 0.02 secs,2026-11-06 02:02:02
+C20,unused_clause,removed clause 12880: -661 0,VERIFIED,VERIFIED,True,24.097,c verification time = 24.09 secs,2026-11-06 02:02:26

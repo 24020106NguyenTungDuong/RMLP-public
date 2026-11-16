@@ -1,0 +1,18 @@
+rmn(G) <= 16
+Execution time: 0.116824 s
+h(0) = 8
+h(1) = 10
+h(2) = 3
+h(3) = 11
+h(4) = 9
+h(5) = 6
+h(6) = 7
+h(7) = 13
+h(8) = 4
+h(9) = 15
+h(10) = 16
+h(11) = 12
+h(12) = 5
+h(13) = 14
+
+time limit reached (stop cause SearchStoppedByAbort)

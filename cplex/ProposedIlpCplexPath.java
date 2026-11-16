@@ -15,6 +15,7 @@
  *   java -cp .:<CPLEX_STUDIO_DIR>/cplex/lib/cplex.jar \
  *        -Djava.library.path=<CPLEX_STUDIO_DIR>/cplex/bin/x86-64_linux \
  *        ProposedIlpCplexPath [timeLimitSeconds] < input.txt
+ *   Optional: -Drml.threads=T -Drml.seed=S -Drml.workmem=MB -Drml.nodefile=0..3 -Drml.mipgap=G
  */
 
 import ilog.concert.IloIntVar;
@@ -54,6 +55,14 @@ public class ProposedIlpCplexPath {
         IloCplex cplex = new IloCplex();
         cplex.setOut(null);
         cplex.setParam(IloCplex.Param.TimeLimit, timeLimit);
+        // Run settings, overridable with -Drml.<name>=<value>; the defaults are CPLEX's own
+        // (the submitted runs used CPLEX's defaults).
+        cplex.setParam(IloCplex.Param.Threads, Integer.getInteger("rml.threads", 0));
+        cplex.setParam(IloCplex.Param.RandomSeed, Integer.getInteger("rml.seed", 0));
+        if (System.getProperty("rml.mipgap") != null)
+            cplex.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, Double.parseDouble(System.getProperty("rml.mipgap")));
+        cplex.setParam(IloCplex.Param.WorkMem, Integer.getInteger("rml.workmem", 2048));
+        cplex.setParam(IloCplex.Param.MIP.Strategy.File, Integer.getInteger("rml.nodefile", 1));
 
         IloIntVar[][] x = new IloIntVar[n][ub];
         for (int v = 0; v < n; v++)
@@ -125,6 +134,9 @@ public class ProposedIlpCplexPath {
             }
         }, IloCplex.Callback.Context.Id.Candidate);
 
+        // Spend only the remaining wall-clock budget, so model building counts toward the limit.
+        cplex.setParam(IloCplex.Param.TimeLimit,
+                Math.max(1.0, timeLimit - (System.nanoTime() - startTime) / 1e9));
         boolean solved = cplex.solve();
         double t = (System.nanoTime() - startTime) / 1e9;
 

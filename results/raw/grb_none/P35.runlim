@@ -1,0 +1,33 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_general_gurobi_literal.py
+[runlim] argv[3]:		--threads
+[runlim] argv[4]:		0
+[runlim] argv[5]:		--seed
+[runlim] argv[6]:		0
+[runlim] argv[7]:		--time-limit
+[runlim] argv[8]:		900
+[runlim] start:			Wed Oct 28 21:25:15 2026
+[runlim] child:			16137
+[runlim] sample:		11.05 time, 10.01 real, 367 MB, 1.88 load
+[runlim] sample:		22.12 time, 20.01 real, 371 MB, 1.83 load
+[runlim] sample:		33.59 time, 30.01 real, 372 MB, 1.70 load
+[runlim] sample:		45.03 time, 41.52 real, 372 MB, 1.59 load
+[runlim] sample:		78.15 time, 51.52 real, 645 MB, 1.74 load
+[runlim] sample:		119.87 time, 61.52 real, 649 MB, 2.09 load
+[runlim] sample:		146.94 time, 71.52 real, 657 MB, 2.15 load
+[runlim] end:			Wed Oct 28 21:26:33 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			77.55 seconds
+[runlim] time:			158.88 seconds
+[runlim] space:			673 MB
+[runlim] load:			2.16 maximum
+[runlim] samples:		761

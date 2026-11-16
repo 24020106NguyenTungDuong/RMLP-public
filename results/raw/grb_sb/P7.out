@@ -1,0 +1,16 @@
+rmn(G) <= 11
+Execution time: 0.008643 s
+
+rmn(G) <= 9
+Execution time: 0.017028 s
+
+rmn(G) = 9
+Execution time: 0.020630 s
+h(0) = 2
+h(1) = 9
+h(2) = 7
+h(3) = 6
+h(4) = 5
+h(5) = 8
+h(6) = 4
+Valid label

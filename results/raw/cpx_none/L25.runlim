@@ -1,0 +1,45 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		java
+[runlim] argv[1]:		-cp
+[runlim] argv[2]:		.:/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/lib/cplex.jar
+[runlim] argv[3]:		-Djava.library.path=/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/bin/x86-64_linux
+[runlim] argv[4]:		-Drml.threads=0
+[runlim] argv[5]:		-Drml.seed=0
+[runlim] argv[6]:		-Drml.workmem=2048
+[runlim] argv[7]:		-Drml.nodefile=1
+[runlim] argv[8]:		SolveGeneralCplexLiteral
+[runlim] argv[9]:		900
+[runlim] start:			Sun Nov  8 19:08:05 2026
+[runlim] child:			196845
+[runlim] sample:		18.91 time, 12.10 real, 928 MB, 1.99 load
+[runlim] sample:		47.78 time, 22.10 real, 2446 MB, 2.22 load
+[runlim] sample:		68.96 time, 32.10 real, 2342 MB, 2.18 load
+[runlim] sample:		89.40 time, 44.17 real, 2404 MB, 2.15 load
+[runlim] sample:		111.57 time, 54.17 real, 2411 MB, 2.13 load
+[runlim] sample:		133.27 time, 64.17 real, 2416 MB, 2.11 load
+[runlim] sample:		154.51 time, 76.61 real, 2420 MB, 2.09 load
+[runlim] sample:		175.80 time, 86.61 real, 2420 MB, 2.08 load
+[runlim] sample:		197.14 time, 96.61 real, 2427 MB, 2.06 load
+[runlim] sample:		218.48 time, 108.71 real, 2430 MB, 2.05 load
+[runlim] sample:		239.79 time, 118.71 real, 2442 MB, 2.05 load
+[runlim] sample:		261.13 time, 128.71 real, 2443 MB, 2.04 load
+[runlim] sample:		282.46 time, 138.71 real, 2443 MB, 2.03 load
+[runlim] sample:		303.79 time, 150.83 real, 2446 MB, 2.03 load
+[runlim] sample:		325.11 time, 160.83 real, 2446 MB, 2.02 load
+[runlim] sample:		346.46 time, 170.83 real, 2446 MB, 2.02 load
+[runlim] sample:		367.79 time, 182.95 real, 2447 MB, 2.02 load
+[runlim] sample:		389.10 time, 192.95 real, 2451 MB, 2.01 load
+[runlim] end:			Sun Nov  8 19:11:25 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			199.95 seconds
+[runlim] time:			411.08 seconds
+[runlim] space:			3550 MB
+[runlim] load:			2.22 maximum
+[runlim] samples:		1871

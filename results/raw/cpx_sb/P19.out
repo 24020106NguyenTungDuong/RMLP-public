@@ -1,0 +1,33 @@
+rmn(G) <= 36
+Execution time: 0.782878 s
+
+rmn(G) <= 34
+Execution time: 0.859330 s
+
+rmn(G) <= 32
+Execution time: 0.998584 s
+
+rmn(G) <= 31
+Execution time: 1.043337 s
+
+rmn(G) = 31
+Execution time: 2.133943 s
+h(0) = 12
+h(1) = 30
+h(2) = 24
+h(3) = 20
+h(4) = 23
+h(5) = 28
+h(6) = 13
+h(7) = 26
+h(8) = 27
+h(9) = 18
+h(10) = 25
+h(11) = 15
+h(12) = 31
+h(13) = 29
+h(14) = 17
+h(15) = 19
+h(16) = 21
+h(17) = 14
+h(18) = 22

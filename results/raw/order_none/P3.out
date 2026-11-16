@@ -1,0 +1,14 @@
+rmn(G) <= 4
+Execution time: 0.000394 s
+h(0) = 2
+h(1) = 3
+h(2) = 4
+
+rmn(G) <= 3
+Execution time: 0.000450 s
+h(0) = 1
+h(1) = 2
+h(2) = 3
+
+rmn(G) = 3
+Execution time: 0.000472 s

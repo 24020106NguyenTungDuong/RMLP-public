@@ -1,0 +1,44 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		java
+[runlim] argv[1]:		-cp
+[runlim] argv[2]:		.:/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/lib/cplex.jar
+[runlim] argv[3]:		-Djava.library.path=/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/bin/x86-64_linux
+[runlim] argv[4]:		-Drml.threads=0
+[runlim] argv[5]:		-Drml.seed=0
+[runlim] argv[6]:		-Drml.workmem=2048
+[runlim] argv[7]:		-Drml.nodefile=1
+[runlim] argv[8]:		SolveGeneralCplexLiteral
+[runlim] argv[9]:		900
+[runlim] start:			Sun Nov  8 19:04:58 2026
+[runlim] child:			196749
+[runlim] sample:		24.01 time, 10.01 real, 1526 MB, 2.63 load
+[runlim] sample:		47.08 time, 22.14 real, 1940 MB, 2.54 load
+[runlim] sample:		68.91 time, 32.14 real, 1940 MB, 2.45 load
+[runlim] sample:		90.57 time, 42.14 real, 1965 MB, 2.38 load
+[runlim] sample:		111.36 time, 54.27 real, 1992 MB, 2.32 load
+[runlim] sample:		132.64 time, 64.27 real, 1942 MB, 2.27 load
+[runlim] sample:		154.58 time, 74.27 real, 1909 MB, 2.23 load
+[runlim] sample:		175.68 time, 84.27 real, 1936 MB, 2.20 load
+[runlim] sample:		196.55 time, 96.38 real, 1936 MB, 2.17 load
+[runlim] sample:		218.52 time, 106.38 real, 1919 MB, 2.14 load
+[runlim] sample:		239.78 time, 116.38 real, 1920 MB, 2.12 load
+[runlim] sample:		260.46 time, 128.50 real, 1920 MB, 2.18 load
+[runlim] sample:		282.55 time, 138.50 real, 1933 MB, 2.15 load
+[runlim] sample:		303.86 time, 148.50 real, 1920 MB, 2.13 load
+[runlim] sample:		324.43 time, 160.60 real, 1899 MB, 2.11 load
+[runlim] sample:		346.45 time, 170.60 real, 1920 MB, 2.09 load
+[runlim] sample:		367.94 time, 180.60 real, 2059 MB, 2.08 load
+[runlim] end:			Sun Nov  8 19:08:05 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			186.33 seconds
+[runlim] time:			379.76 seconds
+[runlim] space:			2685 MB
+[runlim] load:			2.63 maximum
+[runlim] samples:		1758

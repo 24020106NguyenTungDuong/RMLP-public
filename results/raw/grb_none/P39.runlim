@@ -1,0 +1,50 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_general_gurobi_literal.py
+[runlim] argv[3]:		--threads
+[runlim] argv[4]:		0
+[runlim] argv[5]:		--seed
+[runlim] argv[6]:		0
+[runlim] argv[7]:		--time-limit
+[runlim] argv[8]:		900
+[runlim] start:			Wed Oct 28 21:30:43 2026
+[runlim] child:			16344
+[runlim] sample:		10.51 time, 10.01 real, 253 MB, 2.59 load
+[runlim] sample:		22.64 time, 20.01 real, 562 MB, 2.34 load
+[runlim] sample:		34.13 time, 30.01 real, 565 MB, 2.14 load
+[runlim] sample:		45.28 time, 42.49 real, 566 MB, 1.96 load
+[runlim] sample:		56.75 time, 52.49 real, 566 MB, 1.89 load
+[runlim] sample:		68.25 time, 62.49 real, 566 MB, 1.75 load
+[runlim] sample:		79.42 time, 75.10 real, 568 MB, 1.63 load
+[runlim] sample:		90.89 time, 85.10 real, 570 MB, 1.54 load
+[runlim] sample:		102.36 time, 95.10 real, 573 MB, 1.45 load
+[runlim] sample:		113.76 time, 107.71 real, 575 MB, 1.38 load
+[runlim] sample:		125.05 time, 117.71 real, 576 MB, 1.32 load
+[runlim] sample:		136.54 time, 127.71 real, 576 MB, 1.27 load
+[runlim] sample:		148.04 time, 140.36 real, 576 MB, 1.23 load
+[runlim] sample:		159.24 time, 150.36 real, 576 MB, 1.20 load
+[runlim] sample:		170.65 time, 160.36 real, 576 MB, 1.17 load
+[runlim] sample:		182.06 time, 170.36 real, 576 MB, 1.14 load
+[runlim] sample:		193.27 time, 183.04 real, 576 MB, 1.12 load
+[runlim] sample:		217.25 time, 193.04 real, 791 MB, 1.17 load
+[runlim] sample:		260.35 time, 203.04 real, 979 MB, 1.69 load
+[runlim] sample:		303.47 time, 215.69 real, 985 MB, 2.04 load
+[runlim] sample:		347.54 time, 225.69 real, 995 MB, 2.35 load
+[runlim] sample:		389.50 time, 235.69 real, 1016 MB, 2.60 load
+[runlim] sample:		425.05 time, 248.38 real, 1015 MB, 2.66 load
+[runlim] sample:		468.86 time, 258.38 real, 1044 MB, 2.87 load
+[runlim] end:			Wed Oct 28 21:35:08 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			264.90 seconds
+[runlim] time:			494.57 seconds
+[runlim] space:			1065 MB
+[runlim] load:			2.96 maximum
+[runlim] samples:		2466

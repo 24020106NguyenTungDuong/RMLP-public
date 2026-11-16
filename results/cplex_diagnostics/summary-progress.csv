@@ -1,0 +1,2 @@
+instance,mode,threads,seed,rows,cols,presolved_rows,root_lp,root_last,root_time,nodes,best_bound,obj,status,runtime_s,t_opt_incumbent_s,t_best_log_s,incumbents,cuts,peak_mb,runlim_status,finished_at
+P40,progress,0,,1116599,3121,485827,40.5929,cutoff,2.88,0,70.0000,70,Optimal,352.32,222.58,202.25,76@106s 71@201s 70@202s,Clique=40; Mixed integer rounding=54; Zero-half=14,3269,ok,2026-10-29 16:31:30

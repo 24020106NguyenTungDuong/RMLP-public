@@ -14,12 +14,20 @@ Run:
 GRB_LICENSE_FILE=/path/to/gurobi.lic python3 proposed_ilp_gurobi_path.py < input.txt
 """
 
+import argparse
 import time
 
 import gurobipy as gp
 from gurobipy import GRB
 
 from common import graph, io, validate
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--threads", type=int, default=0, help="Gurobi Threads (0 = solver default)")
+parser.add_argument("--seed", type=int, default=0)
+parser.add_argument("--time-limit", type=float, default=float("inf"), help="seconds")
+parser.add_argument("--mip-gap", type=float, default=None, help="relative MIPGap (default: Gurobi's)")
+args = parser.parse_args()
 
 n, adj_matrix = io.read_graph()
 UB = io.read_upper_bound()
@@ -29,7 +37,11 @@ start_time = time.perf_counter()
 dist_matrix = graph.all_pairs_bfs(adj_matrix)
 diam = graph.diameter(dist_matrix)
 
-env = gp.Env(params={"OutputFlag": 0})
+# Solver defaults unless overridden (the submitted runs used Gurobi's defaults).
+params = {"OutputFlag": 0, "Threads": args.threads, "Seed": args.seed, "TimeLimit": args.time_limit}
+if args.mip_gap is not None:
+    params["MIPGap"] = args.mip_gap
+env = gp.Env(params=params)
 model = gp.Model("rml_path_literal", env=env)
 
 x = model.addVars(n, range(1, UB + 1), vtype=GRB.BINARY, name="x")
@@ -71,12 +83,16 @@ def report_incumbent(m, where):
         print()
 
 
+model.Params.TimeLimit = max(1.0, args.time_limit - (time.perf_counter() - start_time))
 model.optimize(report_incumbent)
 
 t = time.perf_counter() - start_time
 if model.SolCount > 0:
     k = int(round(model.ObjVal))
-    print(f"rmn(G) = {k}")
+    if model.Status == GRB.OPTIMAL:
+        print(f"rmn(G) = {k}")
+    else:
+        print(f"rmn(G) <= {k} (time limit reached)")
     print(f"Execution time: {t:.6f} s")
 
     labels = [0] * n
@@ -85,6 +101,7 @@ if model.SolCount > 0:
             if x[v, l].X > 0.5:
                 labels[v] = l
                 break
+        print(f"h({v}) = {labels[v]}")
     if len(set(labels)) == n and validate.check_rml(labels, n, diam, dist_matrix):
         print("Valid label")
     else:

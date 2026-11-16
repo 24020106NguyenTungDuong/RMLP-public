@@ -1,0 +1,65 @@
+
+Gurobi 13.0.2 (linux64) logging started Wed Oct 28 23:58:26 2026
+
+Set parameter LogFile to value "/home/zatdai/projects/nqueen/logs/ilp_diagnostics/P30.log"
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 24.04.1 LTS")
+
+CPU model: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+
+Non-default parameters:
+LogToConsole  0
+
+Academic license - for non-commercial use only (licence number and holder removed)
+Optimize a model with 337099 rows, 1741 columns and 679326 nonzeros (Min)
+Model fingerprint: 0x558f2f90
+Model has 1 linear objective coefficients
+Variable types: 0 continuous, 1741 integer (1740 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 6e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [1e+00, 1e+00]
+
+Found heuristic solution: objective 58.0000000
+Presolve removed 327560 rows and 0 columns
+Presolve time: 0.35s
+Presolved: 9539 rows, 1741 columns, 188924 nonzeros
+Variable types: 0 continuous, 1741 integer (1740 binary)
+Performing another presolve...
+Presolve removed 570 rows and 31 columns
+Presolve time: 0.43s
+Found heuristic solution: objective 57.0000000
+Warning: Markowitz tolerance tightened to 0.03125
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    4599    2.6871770e+01   1.542586e+05   0.000000e+00      6s
+    9949    3.0264199e+01   5.976464e+03   0.000000e+00     10s
+   13477    3.1551421e+01   0.000000e+00   0.000000e+00     12s
+   13477    3.1551421e+01   0.000000e+00   0.000000e+00     12s
+
+Root relaxation: objective 3.155142e+01, 13477 iterations, 10.80 seconds (14.86 work units)
+Total elapsed time = 11.65s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   31.55142    0  180   57.00000   31.55142  44.6%     -   12s
+H    0     0                      53.0000000   31.55142  40.5%     -   12s
+H    0     0                      52.0000000   31.55142  39.3%     -   12s
+     0     0   35.45273    0  132   52.00000   35.45273  31.8%     -   15s
+H    0     0                      51.0000000   35.45504  30.5%     -   15s
+     0     0   35.45504    0  129   51.00000   35.45504  30.5%     -   15s
+     0     0   43.15625    0   88   51.00000   43.15625  15.4%     -   16s
+     0     0   50.00000    0   78   51.00000   50.00000  1.96%     -   16s
+     0     0 infeasible    0        51.00000   51.00000  0.00%     -   17s
+
+Explored 1 nodes (22163 simplex iterations) in 17.60 seconds (21.99 work units)
+Thread count was 12 (of 12 available processors)
+
+Solution count 5: 51 52 53 ... 58
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.100000000000e+01, best bound 5.100000000000e+01, gap 0.0000%

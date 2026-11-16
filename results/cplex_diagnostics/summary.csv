@@ -1,0 +1,12 @@
+instance,mode,threads,seed,rows,cols,presolved_rows,root_lp,root_last,root_time,nodes,best_bound,obj,status,runtime_s,t_opt_incumbent_s,t_best_log_s,incumbents,cuts,peak_mb,runlim_status,finished_at
+P20,cb,0,,60499,761,740,22.6269,cutoff,0.10,0,32.0000,32,Optimal,1.21,1.02,,,Zero-half=6; Gomory fractional=1,169,ok,2026-10-29 09:40:32
+P30,cb,0,,337099,1741,5634,33.5934,cutoff,1.01,0,51.0000,51,Optimal,30.10,21.88,,,GUB cover=1; Clique=16; Mixed integer rounding=5; Zero-half=2,924,ok,2026-10-29 09:41:03
+P40,cb,0,,1116599,3121,485827,40.5929,cutoff,6.29,0,70.0000,70,Optimal,363.46,205.54,,,Clique=40; Mixed integer rounding=54; Zero-half=14,5696,ok,2026-10-29 09:47:14
+P44,cb,0,,1655675,3785,771982,44.2132,cutoff,12.72,0,77.0000,77,Optimal,632.38,390.89,,,GUB cover=1; Clique=53; Mixed integer rounding=60; Zero-half=5,9892,ok,2026-10-29 09:57:55
+P45,cb,0,,1816499,3961,853224,45.0569,58.9090,36.55,0,58.9090,79,AbortTimeLim,884.70,423.64,,,Clique=58; Cover=2; Implied bound=7; Mixed integer rounding=79; Zero-half=10,12719,ok,2026-10-29 10:12:56
+P50,cb,0,,2802999,4901,1403337,49.7164,50.8439,55.77,0,50.8439,96,AbortTimeLim,889.34,106.58,,,Clique=93; Implied bound=27; Mixed integer rounding=49; Zero-half=2; Gomory fractional=2,22631,ok,2026-10-29 10:27:58
+C20,cb,0,,10589,581,307,15.2834,infeasible,0.04,1,24.0000,24,Optimal,0.80,0.68,,,GUB cover=2; Clique=2; Cover=1; Lift and project=1,142,ok,2026-10-29 10:27:59
+C30,cb,0,,57884,1321,770,23.3259,cutoff,0.15,0,38.0000,38,Optimal,1.19,0.84,,,GUB cover=13; Clique=3; Cover=1; Implied bound=6; Flow=6; Mixed integer rounding=2; Zero-half=5; Gomory fractional=3,156,ok,2026-10-29 10:28:01
+C40,cb,0,,190179,2361,1035,31.9551,cutoff,0.24,0,52.0000,52,Optimal,4.53,3.05,,,GUB cover=28; Clique=3; Cover=2; Implied bound=46; Flow=3; Mixed integer rounding=47; Zero-half=24; Gomory fractional=4,266,ok,2026-10-29 10:28:05
+C49,cb,0,,410447,3529,1579,39.4508,cutoff,0.37,0,64.0000,64,Optimal,11.67,8.64,,,GUB cover=8; Clique=2; Implied bound=16; Zero-half=6; Gomory fractional=2,381,ok,2026-10-29 10:28:18
+C50,cb,0,,475224,3701,1686,40.8837,cutoff,0.32,0,65.0000,65,Optimal,9.72,8.03,,,GUB cover=11; Implied bound=5; Zero-half=1; Gomory fractional=2,380,ok,2026-10-29 10:28:28

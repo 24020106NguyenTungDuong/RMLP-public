@@ -91,6 +91,8 @@ def print_result(h, k, proven):
         print("No solution found.")
         print()
         return
+    for v, label in enumerate(h):
+        print(f"h({v}) = {label}")
     seen = [0] * (k + 1)
     ok = True
     for val in h:

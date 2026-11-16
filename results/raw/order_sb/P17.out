@@ -1,0 +1,160 @@
+rmn(G) <= 32
+Execution time: 0.009314 s
+h(0) = 16
+h(1) = 17
+h(2) = 18
+h(3) = 19
+h(4) = 20
+h(5) = 21
+h(6) = 22
+h(7) = 23
+h(8) = 24
+h(9) = 25
+h(10) = 26
+h(11) = 27
+h(12) = 28
+h(13) = 29
+h(14) = 30
+h(15) = 31
+h(16) = 32
+Valid label
+Number of clauses: 9125
+Number of variables: 1105
+
+rmn(G) <= 31
+Execution time: 0.022839 s
+h(0) = 15
+h(1) = 16
+h(2) = 17
+h(3) = 18
+h(4) = 19
+h(5) = 20
+h(6) = 21
+h(7) = 22
+h(8) = 23
+h(9) = 24
+h(10) = 25
+h(11) = 26
+h(12) = 27
+h(13) = 28
+h(14) = 29
+h(15) = 30
+h(16) = 31
+Valid label
+Number of clauses: 9125
+Number of variables: 1105
+
+rmn(G) <= 30
+Execution time: 0.035338 s
+h(0) = 14
+h(1) = 17
+h(2) = 16
+h(3) = 15
+h(4) = 18
+h(5) = 19
+h(6) = 20
+h(7) = 21
+h(8) = 22
+h(9) = 23
+h(10) = 24
+h(11) = 25
+h(12) = 26
+h(13) = 27
+h(14) = 28
+h(15) = 29
+h(16) = 30
+Valid label
+Number of clauses: 9125
+Number of variables: 1105
+
+rmn(G) <= 29
+Execution time: 0.046612 s
+h(0) = 14
+h(1) = 17
+h(2) = 16
+h(3) = 15
+h(4) = 19
+h(5) = 18
+h(6) = 13
+h(7) = 20
+h(8) = 21
+h(9) = 22
+h(10) = 23
+h(11) = 24
+h(12) = 25
+h(13) = 26
+h(14) = 27
+h(15) = 28
+h(16) = 29
+Valid label
+Number of clauses: 9125
+Number of variables: 1105
+
+rmn(G) <= 28
+Execution time: 0.059426 s
+h(0) = 14
+h(1) = 17
+h(2) = 16
+h(3) = 15
+h(4) = 19
+h(5) = 18
+h(6) = 13
+h(7) = 22
+h(8) = 21
+h(9) = 20
+h(10) = 12
+h(11) = 23
+h(12) = 24
+h(13) = 25
+h(14) = 26
+h(15) = 27
+h(16) = 28
+Valid label
+Number of clauses: 9125
+Number of variables: 1105
+
+rmn(G) <= 27
+Execution time: 0.072158 s
+h(0) = 14
+h(1) = 17
+h(2) = 16
+h(3) = 15
+h(4) = 19
+h(5) = 18
+h(6) = 13
+h(7) = 22
+h(8) = 21
+h(9) = 20
+h(10) = 12
+h(11) = 24
+h(12) = 25
+h(13) = 26
+h(14) = 23
+h(15) = 11
+h(16) = 27
+Valid label
+Number of clauses: 9125
+Number of variables: 1105
+
+rmn(G) = 27
+Execution time: 28.941569 s
+h(0) = 14
+h(1) = 17
+h(2) = 16
+h(3) = 15
+h(4) = 19
+h(5) = 18
+h(6) = 13
+h(7) = 22
+h(8) = 21
+h(9) = 20
+h(10) = 12
+h(11) = 24
+h(12) = 25
+h(13) = 26
+h(14) = 23
+h(15) = 11
+h(16) = 27
+Valid label
+Number of clauses: 9125
+Number of variables: 1105

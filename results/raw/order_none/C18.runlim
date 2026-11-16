@@ -1,0 +1,40 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_x_and_g_general.py
+[runlim] start:			Fri Nov  6 13:57:07 2026
+[runlim] child:			6936
+[runlim] sample:		10.67 time, 10.01 real, 38 MB, 1.01 load
+[runlim] sample:		21.12 time, 20.01 real, 37 MB, 1.01 load
+[runlim] sample:		31.32 time, 31.44 real, 48 MB, 1.01 load
+[runlim] sample:		41.98 time, 41.44 real, 53 MB, 1.01 load
+[runlim] sample:		52.52 time, 51.44 real, 54 MB, 1.00 load
+[runlim] sample:		62.92 time, 61.44 real, 56 MB, 1.00 load
+[runlim] sample:		73.31 time, 71.44 real, 58 MB, 1.00 load
+[runlim] sample:		83.69 time, 83.71 real, 59 MB, 1.00 load
+[runlim] sample:		94.07 time, 93.71 real, 65 MB, 1.00 load
+[runlim] sample:		104.46 time, 103.71 real, 62 MB, 1.00 load
+[runlim] sample:		114.86 time, 114.93 real, 68 MB, 1.00 load
+[runlim] sample:		125.27 time, 124.93 real, 68 MB, 1.00 load
+[runlim] sample:		135.68 time, 134.93 real, 49 MB, 1.07 load
+[runlim] sample:		146.09 time, 146.25 real, 70 MB, 1.06 load
+[runlim] sample:		156.51 time, 156.25 real, 62 MB, 1.05 load
+[runlim] sample:		166.92 time, 166.25 real, 53 MB, 1.04 load
+[runlim] sample:		177.34 time, 177.61 real, 66 MB, 1.04 load
+[runlim] sample:		187.75 time, 187.61 real, 74 MB, 1.03 load
+[runlim] sample:		198.17 time, 197.61 real, 74 MB, 1.02 load
+[runlim] sample:		208.59 time, 207.61 real, 74 MB, 1.02 load
+[runlim] end:			Fri Nov  6 14:00:43 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			215.50 seconds
+[runlim] time:			215.36 seconds
+[runlim] space:			74 MB
+[runlim] load:			1.08 maximum
+[runlim] samples:		2066

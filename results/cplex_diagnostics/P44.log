@@ -1,0 +1,59 @@
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_TimeLimit                               897.55630545899999
+Generic callback                                 0x20
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms (CPX_PARAM_PREREFORM).
+Tried aggregator 1 time.
+Presolve has eliminated 883693 rows and 0 columns...
+MIP Presolve eliminated 883693 rows and 0 columns.
+MIP Presolve modified 4546 coefficients.
+Reduced MIP has 771982 rows, 3785 columns, and 1781002 nonzeros.
+Reduced MIP has 3784 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 20.05 sec. (39790.03 ticks)
+Probing time = 0.16 sec. (21.09 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 771982 rows, 3785 columns, and 1781002 nonzeros.
+Reduced MIP has 3784 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 2.19 sec. (2312.95 ticks)
+Probing time = 0.13 sec. (20.95 ticks)
+Clique table members: 772433.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 12 threads.
+Root relaxation solution time = 12.72 sec. (2953.03 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       44.2132   197                     44.2132     2837         
+*     0+    0                           84.0000       44.2132            47.37%
+      0     0       51.0207   181       84.0000      Cuts: 41    10233   39.26%
+      0     0       53.5078   179       84.0000      Cuts: 97    18597   36.30%
+*     0+    0                           83.0000       53.5078            35.53%
+      0     0       56.0853   182       83.0000     Cuts: 138    30036   32.43%
+*     0+    0                           78.0000       56.0853            28.10%
+*     0+    0                           77.0000       56.0853            27.16%
+      0     0       57.6970   171       77.0000      Cuts: 66    37550   25.07%
+      0     0       58.2992   181       77.0000      Cuts: 77    40607   24.29%
+      0     0       58.5856   183       77.0000      Cuts: 73    44538   23.91%
+      0     0       58.8311   175       77.0000      Cuts: 69    48542   23.60%
+      0     0       58.9803   174       77.0000      Cuts: 65    52161   23.40%
+      0     0       59.1234   181       77.0000      Cuts: 51    53895   23.22%
+      0     0       59.3302   168       77.0000      Cuts: 44    56910   22.95%
+      0     0        cutoff             77.0000                  57413    0.00%
+Elapsed time = 638.34 sec. (274746.74 ticks, tree = 0.01 MB, solutions = 4)
+
+GUB cover cuts applied:  1
+Clique cuts applied:  53
+Mixed integer rounding cuts applied:  60
+Zero-half cuts applied:  5
+
+Root node processing (before b&c):
+  Real time             =  638.35 sec. (274756.60 ticks)
+Parallel b&c, 12 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  638.35 sec. (274756.60 ticks)

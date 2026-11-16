@@ -1,0 +1,44 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_x_and_g_cycle.py
+[runlim] start:			Tue Nov  3 20:23:17 2026
+[runlim] child:			57667
+[runlim] sample:		10.51 time, 10.01 real, 34 MB, 0.87 load
+[runlim] sample:		21.02 time, 22.10 real, 38 MB, 0.89 load
+[runlim] sample:		31.56 time, 32.10 real, 45 MB, 0.91 load
+[runlim] sample:		42.14 time, 42.10 real, 45 MB, 0.92 load
+[runlim] sample:		52.68 time, 53.86 real, 50 MB, 0.93 load
+[runlim] sample:		63.25 time, 63.86 real, 53 MB, 0.94 load
+[runlim] sample:		73.84 time, 73.86 real, 67 MB, 0.95 load
+[runlim] sample:		84.38 time, 85.70 real, 52 MB, 0.96 load
+[runlim] sample:		94.94 time, 95.70 real, 52 MB, 0.97 load
+[runlim] sample:		105.53 time, 105.70 real, 54 MB, 0.97 load
+[runlim] sample:		116.09 time, 117.53 real, 55 MB, 0.98 load
+[runlim] sample:		126.64 time, 127.53 real, 72 MB, 0.98 load
+[runlim] sample:		137.25 time, 137.53 real, 47 MB, 0.98 load
+[runlim] sample:		147.82 time, 147.53 real, 64 MB, 0.99 load
+[runlim] sample:		158.35 time, 159.26 real, 49 MB, 0.99 load
+[runlim] sample:		169.06 time, 169.27 real, 58 MB, 0.99 load
+[runlim] sample:		179.57 time, 179.26 real, 68 MB, 0.99 load
+[runlim] sample:		190.09 time, 191.15 real, 60 MB, 1.00 load
+[runlim] sample:		200.85 time, 201.15 real, 65 MB, 1.00 load
+[runlim] sample:		211.39 time, 211.15 real, 66 MB, 1.00 load
+[runlim] sample:		221.87 time, 223.22 real, 56 MB, 1.00 load
+[runlim] sample:		232.67 time, 233.22 real, 65 MB, 1.00 load
+[runlim] sample:		243.77 time, 243.22 real, 63 MB, 1.00 load
+[runlim] sample:		254.13 time, 255.64 real, 64 MB, 1.00 load
+[runlim] end:			Tue Nov  3 20:27:41 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			264.36 seconds
+[runlim] time:			263.08 seconds
+[runlim] space:			78 MB
+[runlim] load:			1.00 maximum
+[runlim] samples:		2488

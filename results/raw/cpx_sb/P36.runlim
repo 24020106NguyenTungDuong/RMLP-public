@@ -1,0 +1,44 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		java
+[runlim] argv[1]:		-cp
+[runlim] argv[2]:		.:/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/lib/cplex.jar
+[runlim] argv[3]:		-Djava.library.path=/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/bin/x86-64_linux
+[runlim] argv[4]:		-Drml.threads=0
+[runlim] argv[5]:		-Drml.seed=0
+[runlim] argv[6]:		-Drml.workmem=2048
+[runlim] argv[7]:		-Drml.nodefile=1
+[runlim] argv[8]:		SolvePathCplexLiteral
+[runlim] argv[9]:		900
+[runlim] start:			Thu Oct 29 00:29:28 2026
+[runlim] child:			81188
+[runlim] sample:		18.49 time, 10.01 real, 618 MB, 1.98 load
+[runlim] sample:		48.29 time, 20.01 real, 2507 MB, 1.91 load
+[runlim] sample:		69.62 time, 30.01 real, 2521 MB, 1.92 load
+[runlim] sample:		89.64 time, 40.01 real, 2384 MB, 1.93 load
+[runlim] sample:		109.39 time, 52.86 real, 2384 MB, 1.94 load
+[runlim] sample:		130.14 time, 62.86 real, 2377 MB, 2.03 load
+[runlim] sample:		151.98 time, 72.86 real, 2382 MB, 2.03 load
+[runlim] sample:		173.82 time, 84.27 real, 2387 MB, 2.02 load
+[runlim] sample:		196.06 time, 94.27 real, 2344 MB, 2.02 load
+[runlim] sample:		217.90 time, 104.28 real, 2355 MB, 2.02 load
+[runlim] sample:		238.99 time, 117.16 real, 2348 MB, 2.01 load
+[runlim] sample:		260.46 time, 127.16 real, 2364 MB, 2.01 load
+[runlim] sample:		282.30 time, 137.16 real, 2349 MB, 2.01 load
+[runlim] sample:		304.14 time, 149.62 real, 2350 MB, 2.01 load
+[runlim] sample:		325.59 time, 159.62 real, 2369 MB, 2.00 load
+[runlim] sample:		347.43 time, 169.62 real, 2370 MB, 2.00 load
+[runlim] sample:		369.65 time, 179.62 real, 0 MB, 2.00 load
+[runlim] end:			Thu Oct 29 00:32:27 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			179.67 seconds
+[runlim] time:			369.65 seconds
+[runlim] space:			2533 MB
+[runlim] load:			2.07 maximum
+[runlim] samples:		1701

@@ -1,0 +1,28 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_x_and_g_cycle.py
+[runlim] start:			Tue Nov  3 20:21:46 2026
+[runlim] child:			57346
+[runlim] sample:		10.53 time, 11.58 real, 32 MB, 0.45 load
+[runlim] sample:		21.06 time, 21.58 real, 32 MB, 0.54 load
+[runlim] sample:		31.61 time, 31.58 real, 41 MB, 0.61 load
+[runlim] sample:		42.14 time, 43.47 real, 43 MB, 0.67 load
+[runlim] sample:		52.66 time, 53.47 real, 44 MB, 0.72 load
+[runlim] sample:		63.20 time, 63.47 real, 44 MB, 0.76 load
+[runlim] sample:		73.73 time, 75.19 real, 50 MB, 0.80 load
+[runlim] sample:		84.48 time, 85.19 real, 47 MB, 0.83 load
+[runlim] end:			Tue Nov  3 20:23:17 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			90.84 seconds
+[runlim] time:			90.55 seconds
+[runlim] space:			53 MB
+[runlim] load:			0.85 maximum
+[runlim] samples:		857

@@ -1,0 +1,65 @@
+rmn(G) <= 12
+Execution time: 0.001297 s
+h(0) = 1
+h(1) = 6
+h(2) = 7
+h(3) = 8
+h(4) = 9
+h(5) = 4
+h(6) = 5
+h(7) = 10
+h(8) = 11
+Valid label
+
+rmn(G) <= 11
+Execution time: 0.001367 s
+h(0) = 1
+h(1) = 6
+h(2) = 7
+h(3) = 8
+h(4) = 9
+h(5) = 4
+h(6) = 5
+h(7) = 10
+h(8) = 11
+Valid label
+
+rmn(G) <= 10
+Execution time: 0.001440 s
+h(0) = 2
+h(1) = 6
+h(2) = 7
+h(3) = 5
+h(4) = 10
+h(5) = 9
+h(6) = 8
+h(7) = 3
+h(8) = 4
+Valid label
+
+rmn(G) <= 9
+Execution time: 0.001726 s
+h(0) = 5
+h(1) = 6
+h(2) = 4
+h(3) = 2
+h(4) = 3
+h(5) = 1
+h(6) = 7
+h(7) = 8
+h(8) = 9
+Valid label
+
+rmn(G) = 9
+Execution time: 0.001762 s
+h(0) = 5
+h(1) = 6
+h(2) = 4
+h(3) = 2
+h(4) = 3
+h(5) = 1
+h(6) = 7
+h(7) = 8
+h(8) = 9
+Valid label
+

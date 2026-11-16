@@ -1,116 +1,102 @@
-# Exact Radio Mean Labeling of Paths and Cycles
+# Exact Approaches for Radio Mean Labeling: ILP and SAT
 
-> Submission ID: *TBD*
-> Authors: *TBD*
-
-This repository contains the code, datasets, and independent validators supporting our results
-on the **Radio Mean Labeling (RML) Problem** for path and cycle graphs.
+Code, instances and complete results for the paper *Exact approaches for Radio mean labeling: ILP
+and SAT* by Huong Vu Thanh, Duong Nguyen Tung, Thuan Truong Ninh and Khanh To Van (IEEE Access,
+under review). The CNF formulas and LRAT proofs are archived on Zenodo:
+[10.5281/zenodo.24269021](https://doi.org/10.5281/zenodo.24269021).
 
 ## Overview
 
-A radio mean labeling of a graph `G` is an injective function `γ: V(G) → Z+` such that for every
-pair of distinct vertices `u, v`:
+A radio mean labeling of a connected graph `G` is an injective function `h: V(G) → Z+` such that
+for every pair of distinct vertices `u, v`:
 
 ```
-d(u, v) + ceil((γ(u) + γ(v)) / 2) >= 1 + diam(G)
+d(u, v) + ceil((h(u) + h(v)) / 2) >= 1 + diam(G)
 ```
 
-The **radio mean number** `rmn(G)` is the minimum possible span (i.e. `max(γ)`) over all valid
-radio mean labelings of `G`.
+The **radio mean number** `rmn(G)` is the minimum span `max(h)` over all radio mean labelings of
+`G`. This repository contains the paper's exact methods for computing it:
 
-This repository provides:
-- SAT-based solvers implementing this paper's proposed encoding for computing `rmn(G)`.
-- ILP models (Gurobi, CPLEX) implementing the literal pairwise-boolean Radio-mean formulation,
-  used as an independent cross-check.
-- A literal SAT transcription of the same pairwise-boolean ILP model, used as a further
-  independent cross-check.
-- Standalone validators that re-derive and check every returned labeling against the RML
-  condition directly, independent of the solver that produced it.
+- the **ILP model**, solved with Gurobi and CPLEX;
+- the **Basic SAT encoding**, a direct transcription of the ILP model into CNF;
+- the **order SAT encoding** (order variables `G(v,l)` linked to exact-label variables `x(v,l)`),
+  with the incremental descending search of Algorithm 1;
+- the **constraint programming model** used for comparison (CP Optimizer);
 
-Detailed results, coverage, and comparisons against prior work are presented in the paper; this
-repository is the accompanying code and data.
+together with the symmetry-breaking constraints for paths and cycles, the distance-twin clauses
+for any graph, the LRAT proof pipeline, the baselines from the literature, the experiment
+harness, and every result reported in the paper.
 
-## Repository Structure
+## Repository structure
 
 | Path | Contents |
 |---|---|
-| `datasets/path/` | Path graph instances, `n = 3..50` |
-| `datasets/cycle/` | Cycle graph instances, `n = 5..50` |
-| `sat/proposed_sat_*.py` | This paper's proposed SAT encoding (x+G and only-G variants), general/path/cycle |
-| `sat/simple_sat_*.py` | Literal SAT transcription of the pairwise-boolean ILP model, general/path/cycle |
-| `sat/common/` | Shared Python library (graph utilities, encoding, I/O, validation) |
-| `gurobi/proposed_ilp_gurobi_*.py` | Literal pairwise-boolean ILP model via Gurobi, general/path/cycle |
-| `cplex/ProposedIlpCplex*.java` | Literal pairwise-boolean ILP model via CPLEX (Java), general/path/cycle |
-| `validate/validate_path.py`, `validate/validate_cycle.py` | Independent validators: run the Gurobi/CPLEX solvers and re-check every labeling against the RML condition |
+| `datasets/path/`, `datasets/cycle/` | `P_n`, `n = 3..50`, and `C_n`, `n = 5..50` |
+| `datasets/{wheel,subdivided_star,ladder,grid,caterpillar}/` | The further families of Section IV-D; `datasets/gen_families.py` generates them (file name = family parameter `m`, see its docstring) |
+| `sat/order_sat_{path,cycle,general}.py` | Order SAT encoding; `path`/`cycle` add the family symmetry breaking (`order_sat_cycle.py --sb full\|rotation`), `general` uses only the distance-twin clauses |
+| `sat/simple_sat_{path,cycle,general}.py` | Basic SAT encoding |
+| `gurobi/proposed_ilp_gurobi_{path,cycle,general}.py` | ILP model via Gurobi |
+| `cplex/ProposedIlpCplex{Path,Cycle,General}.java` | ILP model via CPLEX (Java API) |
+| `cp/cp_general.py` | CP model via CP Optimizer (docplex) |
+| `*/common/` | Shared Python library (graph utilities, encoding, I/O, validation) |
+| `validate/` | Validators that run the ILP solvers and re-check every labeling |
+| `experiments/` | Experiment harness, proof checking, solver statistics and diagnostics; see `experiments/README.md` |
+| `baselines/` | The published bounds of Tables 4–5, evaluated for every `n` |
+| `results/` | Every result of the paper: `results.csv`, the raw solver outputs, the proof checks, the statistics and the optimal labelings |
+| `archive/` | Variants not used in the paper (only-`G` order encoding); not runnable in place |
 
-Each `general` variant makes no graph-specific assumptions; `path` and `cycle` variants add
-symmetry-breaking constraints that are only sound for their respective graph families.
+Each `general` variant makes no graph-specific assumptions; the `path` and `cycle` variants add
+symmetry-breaking constraints that are sound only for their families.
 
 ## Installation
-
-### Python / SAT solvers
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install python-sat
+pip install python-sat gurobipy docplex
 ```
 
-The `sat/` scripts use [PySAT](https://pysathq.github.io/) with the CaDiCaL backend (bundled with
-`python-sat`). No further setup is required to run `sat/proposed_sat_*.py` or `sat/simple_sat_*.py`.
+- **SAT:** [PySAT](https://pysathq.github.io/) with its bundled CaDiCaL 1.9.5; nothing else is needed.
+- **Gurobi:** requires a licence; point `GRB_LICENSE_FILE` at it.
+- **CPLEX:** requires IBM ILOG CPLEX Optimization Studio. Compile once:
+  ```bash
+  cd cplex
+  javac -cp <CPLEX_STUDIO_DIR>/cplex/lib/cplex.jar *.java
+  ```
+- **CP Optimizer:** part of the same Studio; set
+  `CPO_EXEC=<CPLEX_STUDIO_DIR>/cpoptimizer/bin/x86-64_linux/cpoptimizer`.
 
-### Gurobi
-
-```bash
-pip install gurobipy
-```
-
-Requires a valid Gurobi license. Point `GRB_LICENSE_FILE` at your license file, or place it at the
-default `~/gurobi.lic`.
-
-### CPLEX (Java)
-
-Requires an IBM ILOG CPLEX Optimization Studio installation. Compile once before use:
-
-```bash
-cd cplex
-javac -cp <CPLEX_STUDIO_DIR>/cplex/lib/cplex.jar *.java
-```
-
-To run a solver or the validators, set two environment variables pointing at your installation:
-
-```bash
-export CPLEX_JAR=<CPLEX_STUDIO_DIR>/cplex/lib/cplex.jar
-export CPLEX_LIB_PATH=<CPLEX_STUDIO_DIR>/cplex/bin/x86-64_linux
-```
+The paper used Python 3.12.3, PySAT 1.8.dev30, Gurobi 13.0.2, CPLEX and CP Optimizer 22.2.0,
+docplex 2.32 and OpenJDK 21 (Table 2 of the paper).
 
 ## Usage
 
-All solvers read a graph instance from stdin and write results to stdout. Instance files are
-under `datasets/`.
+Every solver reads an instance from stdin and prints each improved labeling (`rmn(G) <= k`, the
+time, and `h(i) = label` per vertex), then `rmn(G) = k` when it proves optimality.
 
 ```bash
-# Proposed SAT encoding (this paper's method)
-python3 sat/proposed_sat_x_and_g_cycle.py < datasets/cycle/50.txt
+# Order SAT encoding with symmetry breaking
+python3 sat/order_sat_cycle.py < datasets/cycle/20.txt
 
-# Literal SAT transcription of the pairwise-boolean ILP model
-python3 sat/simple_sat_path.py < datasets/path/30.txt
+# Basic SAT encoding
+python3 sat/simple_sat_path.py < datasets/path/14.txt
 
-# Gurobi (literal pairwise-boolean ILP model)
-GRB_LICENSE_FILE=/path/to/gurobi.lic python3 gurobi/proposed_ilp_gurobi_cycle.py < datasets/cycle/50.txt
+# ILP via Gurobi
+python3 gurobi/proposed_ilp_gurobi_path.py --time-limit 900 < datasets/path/40.txt
 
-# CPLEX (Java, literal pairwise-boolean ILP model)
+# ILP via CPLEX
 cd cplex
-java -cp .:$CPLEX_JAR -Djava.library.path=$CPLEX_LIB_PATH ProposedIlpCplexPath 300 < ../datasets/path/40.txt
+java -cp .:<CPLEX_STUDIO_DIR>/cplex/lib/cplex.jar \
+     -Djava.library.path=<CPLEX_STUDIO_DIR>/cplex/bin/x86-64_linux \
+     ProposedIlpCplexPath 900 < ../datasets/path/40.txt
+
+# CP model
+python3 cp/cp_general.py --time-limit 900 < datasets/wheel/20.txt
 ```
 
-Each solver prints `rmn(G) = <value>` (or successive `rmn(G) <= <value>` incumbents as they are
-found, for the ILP solvers), the vertex labeling (`h(<vertex>) = <label>`), execution time, and a
-self-check result (`Valid label` / `Invalid label`).
+To reproduce the paper's experiments, see `experiments/README.md`.
 
-## Dataset Format
-
-Each instance file has the form:
+## Dataset format
 
 ```
 n
@@ -118,33 +104,19 @@ n
 UB
 ```
 
-`UB` is the initial upper bound on the span supplied to the ILP-based solvers
-(`UB = n + diam(G) - 1`); the proposed SAT solvers compute this bound internally and ignore the
-value in the file.
+`UB = n + diam(G) - 1` is the initial upper bound on the span (Lemma 1 of the paper).
 
 ## Validation
 
-`validate/validate_path.py` and `validate/validate_cycle.py` run the Gurobi and CPLEX solvers
-across the full dataset and independently re-verify every returned labeling: injectivity, the
-actual radio-mean distance condition (re-derived from the raw solver output, not assumed from the
-encoding), and consistency between the reported `rmn(G)` and `max(labels)`. This check is
-implemented separately from the encoding logic in `common/validate.py`, so it does not simply
-trust that the ILP model was built correctly.
+Every labeling a solver reports is re-checked against the definition, independently of the
+solver: by the solvers themselves (`common/validate.py`), by the experiment harness
+(`experiments/campaign.py`, column `labels_valid` of `results/results.csv`), and by the
+validators:
 
 ```bash
 python3 validate/validate_cycle.py --min 5 --max 50 --timeout 120
 python3 validate/validate_path.py --min 3 --max 50 --timeout 300
 ```
 
-Note: for the path CPLEX solver, only instances up to `n = 42` are run by default (`CPLEX_CAP` in
-`validate_path.py`) — beyond that, the literal encoding's constraint count can exhaust memory on a
-typical machine. Gurobi covers `n = 50` for path without issue. Adjust the cap if your machine has
-more memory headroom.
-
-## Common Issues
-
-- **`FAIL (missing label(s))` from the CPLEX validators**: the `.java` files have not been
-  compiled. Run `javac` in `cplex/` as shown above before invoking the CPLEX solvers or validators.
-- **`RuntimeError: Set CPLEX_JAR and CPLEX_LIB_PATH...`**: these environment variables are unset
-  or point at the wrong location — see the CPLEX installation section above.
-- **Gurobi license errors**: confirm `GRB_LICENSE_FILE` points at a valid, unexpired license file.
+`validate_path.py` runs CPLEX only up to `n = 42` by default (`CPLEX_CAP`), to keep validation
+runs short; CPLEX needs up to 22.6 GB on `P_50`.

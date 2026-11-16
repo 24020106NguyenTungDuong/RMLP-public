@@ -1,0 +1,46 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_general_cp.py
+[runlim] argv[3]:		--threads
+[runlim] argv[4]:		0
+[runlim] argv[5]:		--seed
+[runlim] argv[6]:		0
+[runlim] argv[7]:		--time-limit
+[runlim] argv[8]:		900
+[runlim] start:			Tue Nov 10 11:28:01 2026
+[runlim] child:			1346
+[runlim] sample:		92.02 time, 10.01 real, 111 MB, 8.72 load
+[runlim] sample:		188.43 time, 20.01 real, 123 MB, 9.22 load
+[runlim] sample:		283.29 time, 30.01 real, 133 MB, 8.91 load
+[runlim] sample:		377.09 time, 40.65 real, 143 MB, 8.80 load
+[runlim] sample:		466.58 time, 50.65 real, 152 MB, 9.29 load
+[runlim] sample:		547.88 time, 60.65 real, 159 MB, 9.71 load
+[runlim] sample:		641.66 time, 71.33 real, 169 MB, 9.40 load
+[runlim] sample:		737.29 time, 81.33 real, 180 MB, 9.64 load
+[runlim] sample:		832.04 time, 91.33 real, 190 MB, 9.00 load
+[runlim] sample:		926.73 time, 102.02 real, 199 MB, 9.46 load
+[runlim] sample:		1022.21 time, 112.02 real, 210 MB, 9.85 load
+[runlim] sample:		1115.51 time, 122.02 real, 220 MB, 9.45 load
+[runlim] sample:		1210.83 time, 132.65 real, 230 MB, 9.47 load
+[runlim] sample:		1306.36 time, 142.65 real, 241 MB, 9.86 load
+[runlim] sample:		1402.75 time, 152.65 real, 251 MB, 9.97 load
+[runlim] sample:		1498.11 time, 162.65 real, 259 MB, 9.56 load
+[runlim] sample:		1591.93 time, 173.28 real, 269 MB, 9.94 load
+[runlim] sample:		1685.43 time, 183.28 real, 280 MB, 10.25 load
+[runlim] sample:		1779.04 time, 193.28 real, 291 MB, 10.52 load
+[runlim] sample:		1872.97 time, 204.04 real, 301 MB, 10.75 load
+[runlim] end:			Tue Nov 10 11:31:30 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		2
+[runlim] processes:		3
+[runlim] real:			209.45 seconds
+[runlim] time:			1923.30 seconds
+[runlim] space:			306 MB
+[runlim] load:			10.85 maximum
+[runlim] samples:		2055

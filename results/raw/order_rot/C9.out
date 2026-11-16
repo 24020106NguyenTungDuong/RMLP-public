@@ -1,0 +1,62 @@
+rmn(G) <= 12
+Execution time: 0.001026 s
+h(0) = 4
+h(1) = 5
+h(2) = 6
+h(3) = 7
+h(4) = 8
+h(5) = 9
+h(6) = 10
+h(7) = 11
+h(8) = 12
+
+rmn(G) <= 11
+Execution time: 0.001306 s
+h(0) = 3
+h(1) = 4
+h(2) = 5
+h(3) = 6
+h(4) = 7
+h(5) = 8
+h(6) = 9
+h(7) = 10
+h(8) = 11
+
+rmn(G) <= 10
+Execution time: 0.001568 s
+h(0) = 2
+h(1) = 5
+h(2) = 3
+h(3) = 4
+h(4) = 6
+h(5) = 7
+h(6) = 8
+h(7) = 9
+h(8) = 10
+
+rmn(G) <= 9
+Execution time: 0.001811 s
+h(0) = 1
+h(1) = 6
+h(2) = 4
+h(3) = 3
+h(4) = 5
+h(5) = 2
+h(6) = 7
+h(7) = 8
+h(8) = 9
+
+rmn(G) = 9
+Execution time: 0.001996 s
+h(0) = 1
+h(1) = 6
+h(2) = 4
+h(3) = 3
+h(4) = 5
+h(5) = 2
+h(6) = 7
+h(7) = 8
+h(8) = 9
+Valid label
+Number of clauses: 1089
+Number of variables: 225

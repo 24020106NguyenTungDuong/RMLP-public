@@ -1,0 +1,58 @@
+[     2.75] Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+[     2.77] CPXPARAM_Emphasis_MIP                            3
+[     2.77] CPXPARAM_TimeLimit                               897.26603757800001
+[     5.53] Tried aggregator 1 time.
+[    24.92] Presolve has eliminated 963275 rows and 0 columns...
+[    24.92] MIP Presolve eliminated 963275 rows and 0 columns.
+[    24.92] MIP Presolve modified 4736 coefficients.
+[    24.94] Reduced MIP has 853224 rows, 3961 columns, and 1955390 nonzeros.
+[    24.94] Reduced MIP has 3960 binaries, 1 generals, 0 SOSs, and 0 indicators.
+[    24.94] Presolve time = 23.30 sec. (43837.37 ticks)
+[    28.51] Probing time = 0.16 sec. (22.36 ticks)
+[    29.17] Tried aggregator 1 time.
+[    31.03] Detecting symmetries...
+[    31.32] Reduced MIP has 853224 rows, 3961 columns, and 1955390 nonzeros.
+[    31.32] Reduced MIP has 3960 binaries, 1 generals, 0 SOSs, and 0 indicators.
+[    31.32] Presolve time = 2.78 sec. (2863.65 ticks)
+[    87.02] Elapsed time = 57.25 sec. (208764.95 ticks) for 4% of clique growth
+[   199.80] Elapsed time = 173.22 sec. (644413.71 ticks) for 28% of clique growth
+[   232.35] Probing fixed 1 vars, tightened 0 bounds.
+[   232.35] Probing time = 0.37 sec. (278.14 ticks)
+[   232.45] Cover probing fixed 1 vars, tightened 1 bounds.
+[   239.75] Elapsed time = 7.29 sec. (10026.82 ticks) for 29% of clique merging
+[   247.46] Elapsed time = 15.01 sec. (20027.54 ticks) for 36% of clique merging
+[   255.88] Elapsed time = 24.34 sec. (30093.12 ticks) for 41% of clique merging
+[   262.97] Elapsed time = 31.42 sec. (40157.45 ticks) for 44% of clique merging
+[   271.60] Elapsed time = 40.06 sec. (50175.75 ticks) for 47% of clique merging
+[   280.01] Clique merging time = 48.47 sec. (59818.41 ticks)
+[   280.25] Probing added 2 nonzeros.
+[   280.26] Clique table members: 328025.
+[   282.57] MIP emphasis: best bound.
+[   282.57] MIP search method: dynamic search.
+[   282.57] Parallel mode: deterministic, using up to 12 threads.
+[   288.22] Root relaxation solution time = 6.63 sec. (3899.55 ticks)
+[   288.22] 
+[   288.22]         Nodes                                         Cuts/
+[   288.22]    Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+[   288.22] 
+[   288.22] *     0+    0                           88.0000        1.0000            98.86%
+[   288.25]       0     0       45.0569   206       88.0000       45.0569     3135   48.80%
+[   747.72] *     0+    0                           81.0000       45.0569            44.37%
+[   748.00]       0     0       48.1969   174       81.0000      Cuts: 92     9648   40.50%
+[   872.27] 
+[   872.27] GUB cover cuts applied:  1
+[   872.27] Clique cuts applied:  54
+[   872.27] Implied bound cuts applied:  3
+[   872.27] Mixed integer rounding cuts applied:  48
+[   872.27] Zero-half cuts applied:  3
+[   872.27] Lift and project cuts applied:  8
+[   872.27] Gomory fractional cuts applied:  5
+[   872.29] 
+[   872.29] Root node processing (before b&c):
+[   872.29]   Real time             =  897.66 sec. (1342650.13 ticks)
+[   872.29] Parallel b&c, 12 threads:
+[   872.29]   Real time             =    0.00 sec. (0.00 ticks)
+[   872.29]   Sync time (average)   =    0.00 sec.
+[   872.29]   Wait time (average)   =    0.00 sec.
+[   872.29]                           ------------
+[   872.29] Total (root+branch&cut) =  897.66 sec. (1342650.13 ticks)

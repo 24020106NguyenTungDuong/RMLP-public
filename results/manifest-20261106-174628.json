@@ -1,0 +1,32 @@
+{
+  "started": "2026-11-06 17:46:28",
+  "args": {
+    "arms": "order_none",
+    "families": "C",
+    "min_n": 0,
+    "max_n": 50,
+    "budget": 900,
+    "stop_at_span": null,
+    "space_mb": 26000,
+    "threads": 0,
+    "seed": 0,
+    "cplex_workmem": 2048,
+    "cplex_nodefile": 1,
+    "jobs": 1,
+    "out_dir": "/home/zatdai/projects/nqueen/logs/rerun",
+    "dry_run": false
+  },
+  "jobs": 1,
+  "git_head": "fd16d488e927417bb09982664790c7f0c0294dd9",
+  "git_dirty_files": "",
+  "cpu": "Model name:                           Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+  "mem_total": "MemTotal:       28738760 kB",
+  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "os": "PRETTY_NAME=\"Ubuntu 24.04.1 LTS\"",
+  "python": "Python 3.12.3",
+  "pysat": "1.8.dev30",
+  "gurobi": "(13, 0, 2)",
+  "java": "openjdk version \"21.0.12.1\" 2026-08-18",
+  "cplex_home": "/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex",
+  "runlim": "2.0.0rc12"
+}

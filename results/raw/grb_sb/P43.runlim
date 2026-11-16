@@ -1,0 +1,46 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		solve_path_gurobi_literal.py
+[runlim] argv[3]:		--threads
+[runlim] argv[4]:		0
+[runlim] argv[5]:		--seed
+[runlim] argv[6]:		0
+[runlim] argv[7]:		--time-limit
+[runlim] argv[8]:		900
+[runlim] start:			Wed Oct 28 20:47:17 2026
+[runlim] child:			10946
+[runlim] sample:		10.05 time, 10.02 real, 268 MB, 2.55 load
+[runlim] sample:		20.73 time, 22.77 real, 756 MB, 2.31 load
+[runlim] sample:		32.06 time, 32.77 real, 817 MB, 2.11 load
+[runlim] sample:		43.42 time, 42.77 real, 818 MB, 1.94 load
+[runlim] sample:		54.75 time, 54.88 real, 818 MB, 1.79 load
+[runlim] sample:		66.01 time, 64.88 real, 818 MB, 1.67 load
+[runlim] sample:		77.37 time, 74.88 real, 818 MB, 1.57 load
+[runlim] sample:		88.39 time, 87.57 real, 819 MB, 1.48 load
+[runlim] sample:		99.72 time, 97.57 real, 821 MB, 1.41 load
+[runlim] sample:		111.09 time, 107.57 real, 822 MB, 1.34 load
+[runlim] sample:		122.45 time, 120.08 real, 822 MB, 1.29 load
+[runlim] sample:		133.55 time, 130.08 real, 822 MB, 1.24 load
+[runlim] sample:		144.92 time, 140.08 real, 822 MB, 1.21 load
+[runlim] sample:		156.20 time, 150.08 real, 822 MB, 1.17 load
+[runlim] sample:		167.26 time, 162.66 real, 822 MB, 1.15 load
+[runlim] sample:		178.64 time, 172.66 real, 826 MB, 1.12 load
+[runlim] sample:		220.32 time, 182.66 real, 1179 MB, 1.57 load
+[runlim] sample:		262.00 time, 192.66 real, 1417 MB, 1.94 load
+[runlim] sample:		298.54 time, 205.53 real, 1484 MB, 2.18 load
+[runlim] sample:		337.76 time, 215.52 real, 1484 MB, 2.46 load
+[runlim] end:			Wed Oct 28 20:50:58 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			221.21 seconds
+[runlim] time:			356.07 seconds
+[runlim] space:			1499 MB
+[runlim] load:			2.83 maximum
+[runlim] samples:		2057

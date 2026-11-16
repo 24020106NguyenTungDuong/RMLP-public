@@ -1,0 +1,44 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		java
+[runlim] argv[1]:		-cp
+[runlim] argv[2]:		.:/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/lib/cplex.jar
+[runlim] argv[3]:		-Djava.library.path=/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/bin/x86-64_linux
+[runlim] argv[4]:		-Drml.threads=0
+[runlim] argv[5]:		-Drml.seed=0
+[runlim] argv[6]:		-Drml.workmem=2048
+[runlim] argv[7]:		-Drml.nodefile=1
+[runlim] argv[8]:		SolvePathCplexLiteral
+[runlim] argv[9]:		900
+[runlim] start:			Thu Oct 29 00:32:27 2026
+[runlim] child:			81333
+[runlim] sample:		19.07 time, 12.72 real, 610 MB, 2.00 load
+[runlim] sample:		52.38 time, 22.72 real, 3221 MB, 2.30 load
+[runlim] sample:		74.22 time, 32.72 real, 3155 MB, 2.25 load
+[runlim] sample:		95.63 time, 45.34 real, 3156 MB, 2.21 load
+[runlim] sample:		117.47 time, 55.34 real, 3159 MB, 2.18 load
+[runlim] sample:		139.31 time, 65.34 real, 3159 MB, 2.15 load
+[runlim] sample:		160.80 time, 78.08 real, 3173 MB, 2.13 load
+[runlim] sample:		182.63 time, 88.08 real, 3173 MB, 2.11 load
+[runlim] sample:		205.19 time, 98.08 real, 3173 MB, 2.09 load
+[runlim] sample:		227.02 time, 110.84 real, 3173 MB, 2.08 load
+[runlim] sample:		248.57 time, 120.84 real, 3173 MB, 2.06 load
+[runlim] sample:		270.40 time, 130.84 real, 3182 MB, 2.05 load
+[runlim] sample:		292.25 time, 140.84 real, 3207 MB, 2.04 load
+[runlim] sample:		313.71 time, 153.65 real, 3210 MB, 2.04 load
+[runlim] sample:		335.54 time, 163.65 real, 3223 MB, 2.03 load
+[runlim] sample:		357.38 time, 173.65 real, 3223 MB, 2.03 load
+[runlim] sample:		378.51 time, 183.65 real, 3228 MB, 2.02 load
+[runlim] end:			Thu Oct 29 00:35:37 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			189.55 seconds
+[runlim] time:			389.77 seconds
+[runlim] space:			3244 MB
+[runlim] load:			2.32 maximum
+[runlim] samples:		1759

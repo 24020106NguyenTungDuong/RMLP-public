@@ -1,0 +1,43 @@
+rmn(G) <= 42
+Execution time: 0.997695 s
+
+rmn(G) <= 41
+Execution time: 1.224559 s
+
+rmn(G) <= 40
+Execution time: 1.226827 s
+
+rmn(G) <= 39
+Execution time: 1.228851 s
+
+rmn(G) <= 37
+Execution time: 1.545652 s
+
+rmn(G) <= 36
+Execution time: 2.169664 s
+
+rmn(G) = 36
+Execution time: 2.341673 s
+h(0) = 15
+h(1) = 28
+h(2) = 31
+h(3) = 26
+h(4) = 21
+h(5) = 34
+h(6) = 18
+h(7) = 23
+h(8) = 29
+h(9) = 30
+h(10) = 36
+h(11) = 16
+h(12) = 35
+h(13) = 27
+h(14) = 33
+h(15) = 20
+h(16) = 32
+h(17) = 19
+h(18) = 22
+h(19) = 24
+h(20) = 25
+h(21) = 17
+Valid label

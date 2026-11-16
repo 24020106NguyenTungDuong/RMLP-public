@@ -1,0 +1,28 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	930 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		java
+[runlim] argv[1]:		-cp
+[runlim] argv[2]:		/home/zatdai/projects/nqueen/logs/cplex_diagnostics:/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/lib/cplex.jar
+[runlim] argv[3]:		-Djava.library.path=/home/zatdai/ibm/ILOG/CPLEX_Studio2212/cplex/bin/x86-64_linux
+[runlim] argv[4]:		CplexDiagnostics
+[runlim] argv[5]:		P
+[runlim] argv[6]:		/home/zatdai/projects/nqueen/logs/cplex_diagnostics/P30.log
+[runlim] argv[7]:		900
+[runlim] start:			Thu Oct 29 09:40:32 2026
+[runlim] child:			235017
+[runlim] sample:		22.10 time, 10.67 real, 832 MB, 0.47 load
+[runlim] sample:		42.41 time, 20.67 real, 837 MB, 0.70 load
+[runlim] sample:		63.10 time, 30.67 real, 843 MB, 0.98 load
+[runlim] end:			Thu Oct 29 09:41:03 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			30.86 seconds
+[runlim] time:			63.70 seconds
+[runlim] space:			924 MB
+[runlim] load:			0.98 maximum
+[runlim] samples:		302

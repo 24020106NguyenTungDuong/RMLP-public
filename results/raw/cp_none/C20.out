@@ -1,0 +1,24 @@
+rmn(G) <= 24
+Execution time: 0.130172 s
+h(0) = 21
+h(1) = 7
+h(2) = 19
+h(3) = 18
+h(4) = 8
+h(5) = 23
+h(6) = 14
+h(7) = 9
+h(8) = 10
+h(9) = 12
+h(10) = 17
+h(11) = 5
+h(12) = 15
+h(13) = 22
+h(14) = 16
+h(15) = 20
+h(16) = 6
+h(17) = 13
+h(18) = 11
+h(19) = 24
+
+time limit reached (stop cause SearchStoppedByAbort)

@@ -1,0 +1,27 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			DESKTOP-S6JRUBH
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		26000 MB
+[runlim] argv[0]:		/home/zatdai/projects/nqueen/venv/bin/python
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		validate_ilp_general.py
+[runlim] start:			Mon Nov  9 06:17:27 2026
+[runlim] child:			214760
+[runlim] sample:		10.13 time, 10.01 real, 29 MB, 1.00 load
+[runlim] sample:		20.27 time, 20.46 real, 31 MB, 1.00 load
+[runlim] sample:		30.41 time, 30.46 real, 33 MB, 1.00 load
+[runlim] sample:		40.55 time, 40.46 real, 43 MB, 1.00 load
+[runlim] sample:		50.68 time, 50.91 real, 48 MB, 1.00 load
+[runlim] sample:		60.82 time, 60.91 real, 49 MB, 1.00 load
+[runlim] sample:		70.96 time, 70.91 real, 44 MB, 1.00 load
+[runlim] end:			Mon Nov  9 06:18:40 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			72.45 seconds
+[runlim] time:			72.48 seconds
+[runlim] space:			56 MB
+[runlim] load:			1.00 maximum
+[runlim] samples:		716

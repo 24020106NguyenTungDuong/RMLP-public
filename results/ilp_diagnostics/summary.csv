@@ -1,0 +1,11 @@
+instance,rmn,rows,presolved_rows,lp_bound,root_lp,bound_before_inc,t_opt_incumbent,bound_path,final_bound,obj,nodes,simplex_iters,runtime_s,cuts
+P20,32,60499,2057,10.5,2.038465e+01,26.70290,1,32.00000,32.0,32,1,3544,1.24,Implied bound=1; Clique=34; MIR=20; StrongCG=3; GUB cover=2; Zero half=37; Relax-and-lift=15
+P30,51,337099,9539,15.5,3.155142e+01,35.45273,15,35.45504 43.15625 50.00000 infeasible,51.0,51,1,22163,17.61,
+P40,70,1116599,23726,20.5,4.137303e+01,41.37303,18,46.43734 68.00000 68.00000 68.00000 infeasible,70.0,70,1,33354,51.37,Cover=1; Clique=48; MIR=1; GUB cover=1; Zero half=5; RLT=4; Relax-and-lift=1
+P45,79,1816499,34676,23.0,4.658383e+01,46.58563,510,69.90960 70.81195 73.05194 73.06824 73.07202 73.07253 infeasible,79.0,79,1,169009,556.69,Cover=7; Implied bound=1; Clique=82; MIR=24; StrongCG=8; GUB cover=4; Zero half=12; Relax-and-lift=4
+P50,89,2802999,48226,25.5,5.210521e+01,76.17599,185,78.59399 78.59399 82.56167 82.62021 82.62021 84.69870 infeasible,89.0,89,1,97996,199.56,
+C20,24,10589,403,10.5,1.420714e+01,16.04275,0,infeasible,24.0,24,1,2287,0.32,Gomory=40; Clique=1; MIR=1; Zero half=27; Relax-and-lift=13
+C30,38,57884,2104,15.5,1.886393e+01,23.78680,1,27.62742 27.63685 27.64580 28.89304 28.89304 infeasible,38.0,38,1,8012,2.27,Gomory=16; Cover=1; Implied bound=2; Clique=20; MIR=25; StrongCG=6; GUB cover=2; Zero half=29; Relax-and-lift=37
+C40,52,190179,7384,20.5,2.675902e+01,33.26496,5,33.26496 42.71127 43.33416 43.33416 infeasible,52.0,52,1,20868,5.6,Gomory=1; Implied bound=3; Clique=67; MIR=20; GUB cover=9; Zero half=61; Relax-and-lift=11; BQP=4
+C49,64,410447,13364,25.0,3.135808e+01,31.72276,14,40.60621 40.71577 40.72768 52.58984 52.67936 52.78030 54.09964 54.09964 59.35414 59.35414 59.82432 59.83310 59.83310 60.92736 infeasible,64.0,64,1,52395,26.09,
+C50,65,475224,14773,25.5,3.266107e+01,65.00000,32,65.00000,65.0,65,1,64371,32.71,Gomory=48; Clique=1; MIR=8; Zero half=3; Relax-and-lift=23

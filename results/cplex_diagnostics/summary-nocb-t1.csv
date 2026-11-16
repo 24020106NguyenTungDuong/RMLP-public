@@ -1,0 +1,2 @@
+instance,mode,threads,seed,rows,cols,presolved_rows,root_lp,root_last,root_time,nodes,best_bound,obj,status,runtime_s,t_opt_incumbent_s,t_best_log_s,incumbents,cuts,peak_mb,runlim_status,finished_at
+P40,nocb,1,,1116599,3121,513144,40.2811,51.7380,1.08,0,51.7380,70,AbortTimeLim,291.66,-1.00,267.41,78@266s 77@266s 75@267s 74@267s 73@267s 71@267s 70@267s,Clique=48; Implied bound=12; Mixed integer rounding=60; Zero-half=36,1647,ok,2026-10-29 16:25:31
